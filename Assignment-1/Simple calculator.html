@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Calculator</title>
+</head>
+<body>
+<script>
+var op,a,b,res;
+console.log(WELCOME TO JS CALCULATOR);
+console.log(Select one from the following list of operations);
+console.log(+ : Addition);
+console.log(- : Subtraction);
+console.log(* : Multiplication);
+console.log(/ : Multiplication);
+console.log(! : Square root);
+console.log(^ : Exponention);
+console.log(& : Log );
+ op=prompt("");
+if((op==='!')||(op==='&'))
+{
+a=prompt("Enter a number :");
+switch(op)
+{
+    case '&':
+        res=Math.log(a);
+        console.log(res);
+        break;
+        default:
+        res=Math.sqrt(a);
+        console.log(res);
+}}
+else
+{
+    a=prompt("Enter no1");
+    b=prompt("Enter no2");
+    switch(op)
+    {
+        case '+':
+            res=a+b;
+            break;
+        case '-':
+            res=a-b;
+            break;
+        case '*':
+            res=a*b;
+            break;
+        case '/':
+            res=a/b;
+            break;
+        case '^':
+            res=Math.pow(a,b);
+            break;
+        default:
+            console.log(You have entered an invalid operator);
+
+    }
+}
+        
+
+
+
+</script>
+</body>
+</html>
