@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Easymed</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+</head>
+<style>
+    i{
+        font-size: 80px;
+        color: olive;
+        margin-left: 45%;
+    }
+    header{
+        text-align: center;
+        font-size: xx-large;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 10px;
+        color: chartreuse;
+    }
+    body{
+        background-color: thistle;
+
+    }
+    .na{
+        display: inline-block;
+        background-color: orangered;
+        width: 100%;
+    }
+    i{
+        margin-left: 15%;
+        display: inline-block;
+        color: darkorchid;
+    }
+    .tag{
+        display: inline-block;
+        font-size: larger;
+        padding:0px 20px 10px 5px ;
+        margin-top: 5px;
+        color: darkorchid;
+    }
+    .offer{
+        display: inline-block;
+        font-size: x-large;
+        padding-left: 70px;
+        color:darkcyan;
+    }
+    h2{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: monospace;
+        color: chocolate;
+        
+    }
+    input,label{
+        margin: 20px 40px 20px 40px;
+        font-size: large;
+        
+    }
+    label{
+        font-family:limelight ;
+        color: forestgreen;
+    }
+    #sub{
+        font-style: italic;
+        color: brown;
+    }
+    #res{
+        color: grey;
+    }
+    #res:hover{
+        background-color: burlywood;
+    }
+    #sub:active{
+        background-color: darkgrey;
+    }
+    footer{
+        text-align: right;
+        background-color: mistyrose;
+        font-family: odibee;
+        color: darkslategrey;
+        
+
+    }
+    
+    </style>
+    <body>
+        <!-- Header -->
+        <header>
+            <h1>EASY MED</h1>
+        </header>
+        <!--Navigation Bar -->
+<nav class="na">
+    <i class="fas fa-clinic-medical"></i>
+    <span class="tag">
+    On bed??,Visit Easymed</span>
+    <span class="offer">
+     FLAT 30% OFF ON PURCHASE OF Rs.500 AND ABOVE
+    </span>
+</nav>
+<!-- Signup Form -->
+<form>
+    <h2><b> SIGNUP PLEASE</b></h2>
+    <label  for ="Dsg">Designation:</label>
+    <input required type="radio"  id="mr" value="Mr"><label for="mr">Mr </label>
+    <input readonly type="radio"  id="mrs" value="Mrs"><label for="mrs">Mrs </label>
+    <input required type="radio" id="ms" value="Miss"><label for="ms">Miss </label>
+    <br>
+    <label for ="fname">First Name:</label>
+<input required type="text" id="fname" placeholder="first name">
+<br>
+<label for ="lname">Last Name:</label>
+<input required type="text" id="lname" placeholder="last name">
+<br>
+<label for ="mail">Email:</label>
+<input required type="email" id="mail" placeholder="email">
+<br>
+<label for ="contact">Phone number:</label>
+<input required type="tel" id="contact" placeholder="Phone">
+<br>
+<label for ="pass">Password:</label>
+<input required type="password" id="pass" placeholder="Enter password">
+<br>
+<label for ="conf">Confirm your password:</label>
+<input required type="password" id="conf" placeholder="Re-enter password">
+<br>
+<label for ="count">Country:</label>
+<select required name="count" id="count" placeholder="Select your country">
+    <option value="India">India</option>
+    <option value="Australia">Australia</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Denmark">Denmark</option>
+    <option value="France">France</option>
+    <option value="Egypt">Egypt</option>
+    <option value="Japan">Japan</option>
+    <option value="Mexico">Mexico</option>
+    <option value="USA">USA</option>
+    <option value="New Zealand">New Zealand</option>
+    <option value="South Africa">South Africa</option>
+</select>
+    <br>
+    <input required type="checkbox" id="check" >
+    <label for="check" >I agree to the <a href="terms.html"><u>terms and conditions</u></a></label>
+    <br>
+    <input type="submit" value="Sign up" id="sub">
+    <input type="reset" value="Reset" id="res">
+
+
+</form>
+<br>
+<!-- Footer -->
+<footer>
+    <h3> Head Office: #45,B.V.K Iyengar Road,Bangalore-560003</h3>
+    <h3> Contact Us: +91 91620 91620 , +91 88888 89999</h3>
+    <h3> Mail Us: easymedjj@yahoo.com</h3>
+</footer>
+
+
+
+</body>
+</html>
