@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colorful</title>
+    </head>
+    <style>
+        header{
+            text-align: center;
+            font-size: xx-large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 10%;
+
+        }
+        .a{
+            color: antiquewhite;
+        }
+        .b{
+            color: aqua;
+        }
+        .c{
+            color: black;
+        }
+        .d{
+            color: blue;
+        }
+        .e{
+            color: blueviolet;
+        }
+        .f{
+            color: brown;
+        }
+        .a,.b,.c,.d,.e,.f{
+            text-align: center;
+            font-size: xx-large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body{
+            background-color: coral;
+        }
+        form{
+            margin-top: 20%;
+            text-align: center;
+        }
+        button:hover{
+            background-color: lightpink;
+        }
+    </style>
+    <body>
+        <header>
+            <span class="a">C</span> <span class="b">O</span> <span class="c">L</span> <span class="d">O</span><span class="e">R</span> <span class="f">S</span>
+        </header>
+        <script>
+            //Part i:Creating class
+            class Color{
+                 constructor(r,g,b)
+                 {
+                    this.r=r;
+                    this.g=g;
+                    this.b=b;
+                 }
+                 //Part iii : rgb() method
+                rgb()
+                {
+                    return "rgb("+this.r+", "+this.g+", "+this.b+" )";
+                }
+                // Part iv : hex() method
+                hex()
+                {
+                    return "#"+((1<<24)+(this.r<<16)+(this.g<<8)+this.b).toString(16).slice(1);
+                }
+            }
+                 // Part ii:Creating Color objects
+let turquoise = new Color(64,224,208);
+let purple = new Color(101,31,255);
+console.log("RGB of turquoise is "+turquoise.rgb());
+console.log("Hex representation of turquoise is "+turquoise.hex());
+console.log("RGB of purple is "+purple.rgb());
+console.log("Hex representation of purple  is "+purple.hex());
+alert("Time for you to play with colors");
+function clr()
+{
+var val=document.getElementById("read").value;
+alert("Hex representation of your input color is "+val);
+
+
+
+}
+
+
+
+
+            
+        </script>
+        <form a>
+            <h3> Select a color </h3>
+            <input type="color" id="read" >
+            <hr>
+            <button onclick="clr()">Enter</button>
+        </form>
+    </body>
+</html>
